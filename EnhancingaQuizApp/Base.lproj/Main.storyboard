@@ -87,10 +87,10 @@
                                     <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJD-GC-39f"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 of 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPQ-wR-RID">
-                                <rect key="frame" x="270" y="423" width="61" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct answers: 0 of 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPQ-wR-RID">
+                                <rect key="frame" x="194" y="423" width="213" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="61" id="GWt-IP-P9r"/>
+                                    <constraint firstAttribute="width" constant="213" id="GWt-IP-P9r"/>
                                     <constraint firstAttribute="height" constant="21" id="w4H-og-Q3Q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -98,12 +98,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What time is it?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3q-Xd-u4J">
-                                <rect key="frame" x="116" y="28" width="369" height="90"/>
+                                <rect key="frame" x="235" y="28" width="130.5" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="369" id="5Gp-oL-ity"/>
-                                    <constraint firstAttribute="height" constant="90" id="w9G-96-AjS"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="5Gp-oL-ity"/>
+                                    <constraint firstAttribute="height" constant="100" id="w9G-96-AjS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>

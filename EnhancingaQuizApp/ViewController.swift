@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         
         if sender.titleLabel!.text == getQuestions.answer {
             correctAnswers += 1
-            currentScore.text = "\(correctAnswers) of \(questionArray.count - 1)"
+            currentScore.text = "Correct answers: \(correctAnswers) of \(questionArray.count - 1)"
             questionLabel.text = "That's Correct!"
             sender.setTitleColor(UIColor(red: 15/225, green: 180/225, blue: 105/225, alpha: 1.0), forState: UIControlState.Normal)
             playCorrectSounds()
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         startButon.hidden = true
         currentScore.hidden = false
         correctAnswers = 0
-        currentScore.text = "\(correctAnswers) of \(questionArray.count - 1)"
+        currentScore.text = "Correct answers: \(correctAnswers) of \(questionArray.count - 1)"
     }
     
     func loadNextQuestions(seconds seconds: Int) {
