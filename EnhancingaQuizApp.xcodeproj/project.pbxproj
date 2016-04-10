@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		935A57631CB9EDFC00A7B1D2 /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 935A57621CB9EDFC00A7B1D2 /* wrong.wav */; };
+		935A57651CB9EE0200A7B1D2 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 935A57641CB9EE0200A7B1D2 /* correct.wav */; };
 		93FFAA081CB90E02009F8999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFAA071CB90E02009F8999 /* AppDelegate.swift */; };
 		93FFAA0A1CB90E02009F8999 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFAA091CB90E02009F8999 /* ViewController.swift */; };
 		93FFAA0D1CB90E02009F8999 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FFAA0B1CB90E02009F8999 /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		93FFAA121CB90E02009F8999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FFAA101CB90E02009F8999 /* LaunchScreen.storyboard */; };
 		93FFAA1D1CB90E02009F8999 /* EnhancingaQuizAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFAA1C1CB90E02009F8999 /* EnhancingaQuizAppTests.swift */; };
 		93FFAA281CB90E03009F8999 /* EnhancingaQuizAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFAA271CB90E03009F8999 /* EnhancingaQuizAppUITests.swift */; };
+		93FFAA361CB9304B009F8999 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFAA351CB9304B009F8999 /* Questions.swift */; };
+		93FFAA3B1CB9E9F5009F8999 /* GameSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 93FFAA3A1CB9E9F5009F8999 /* GameSound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		935A57621CB9EDFC00A7B1D2 /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
+		935A57641CB9EE0200A7B1D2 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
 		93FFAA041CB90E02009F8999 /* EnhancingaQuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnhancingaQuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FFAA071CB90E02009F8999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93FFAA091CB90E02009F8999 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		93FFAA231CB90E03009F8999 /* EnhancingaQuizAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnhancingaQuizAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FFAA271CB90E03009F8999 /* EnhancingaQuizAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancingaQuizAppUITests.swift; sourceTree = "<group>"; };
 		93FFAA291CB90E03009F8999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93FFAA351CB9304B009F8999 /* Questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		93FFAA3A1CB9E9F5009F8999 /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,10 @@
 		93FFAA061CB90E02009F8999 /* EnhancingaQuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				93FFAA371CB9E8E1009F8999 /* Sounds */,
 				93FFAA071CB90E02009F8999 /* AppDelegate.swift */,
 				93FFAA091CB90E02009F8999 /* ViewController.swift */,
+				93FFAA351CB9304B009F8999 /* Questions.swift */,
 				93FFAA0B1CB90E02009F8999 /* Main.storyboard */,
 				93FFAA0E1CB90E02009F8999 /* Assets.xcassets */,
 				93FFAA101CB90E02009F8999 /* LaunchScreen.storyboard */,
@@ -123,6 +133,16 @@
 				93FFAA291CB90E03009F8999 /* Info.plist */,
 			);
 			path = EnhancingaQuizAppUITests;
+			sourceTree = "<group>";
+		};
+		93FFAA371CB9E8E1009F8999 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				935A57641CB9EE0200A7B1D2 /* correct.wav */,
+				935A57621CB9EDFC00A7B1D2 /* wrong.wav */,
+				93FFAA3A1CB9E9F5009F8999 /* GameSound.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +249,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FFAA3B1CB9E9F5009F8999 /* GameSound.wav in Resources */,
+				935A57631CB9EDFC00A7B1D2 /* wrong.wav in Resources */,
 				93FFAA121CB90E02009F8999 /* LaunchScreen.storyboard in Resources */,
 				93FFAA0F1CB90E02009F8999 /* Assets.xcassets in Resources */,
 				93FFAA0D1CB90E02009F8999 /* Main.storyboard in Resources */,
+				935A57651CB9EE0200A7B1D2 /* correct.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FFAA361CB9304B009F8999 /* Questions.swift in Sources */,
 				93FFAA0A1CB90E02009F8999 /* ViewController.swift in Sources */,
 				93FFAA081CB90E02009F8999 /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +506,7 @@
 				93FFAA2E1CB90E03009F8999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93FFAA2F1CB90E03009F8999 /* Build configuration list for PBXNativeTarget "EnhancingaQuizAppTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +515,7 @@
 				93FFAA311CB90E03009F8999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93FFAA321CB90E03009F8999 /* Build configuration list for PBXNativeTarget "EnhancingaQuizAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +524,7 @@
 				93FFAA341CB90E03009F8999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
